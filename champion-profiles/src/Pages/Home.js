@@ -2,24 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ChampionCard from "../Components/ChampionCard";
 import "./Home.css"; 
+import Navbar from "../Components/Navbar";
 
 function Home() {
     return (
         <div>
-            <header>
-                <h1>Champions profile</h1>
-                <div className="header-buttons">
-                <Link to="/aboutus">
-                 <button id="aboutUsButton">About Us</button>
-                </Link>
-                <Link to="/Contact">
-                 <button id="contactUsButton">Contact Us</button>
-                </Link>
-                    <button id="logoutButton">Logout</button>
-                </div>
 
-
-            </header>
+        <Navbar/>
 
             <main>
                 <center>

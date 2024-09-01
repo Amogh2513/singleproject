@@ -1,16 +1,20 @@
 import React, { useState } from "react";
+import Navbar from "../Components/Navbar"; // Assuming Navbar is a separate component
 import "./Contact.css";
 
 const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the default form submission
-    setIsSubmitted(true); // Update state to show submitted message
+    event.preventDefault();
+    setIsSubmitted(true);
   };
 
   return (
+    <div>
+    <Navbar />
     <div className="contact-container">
+
       <header className="contact-header">
         <center>
           <h1>Contact Us</h1>
@@ -56,6 +60,7 @@ const ContactUs = () => {
       <footer className="contact-footer">
         <p>&copy; 2024 Champions Profile</p>
       </footer>
+    </div>
     </div>
   );
 };
